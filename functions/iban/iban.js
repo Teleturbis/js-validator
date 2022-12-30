@@ -87,6 +87,12 @@ function iban(val) {
       ).length > 0
     )
       return { isValid: false, message: 'BLZ invalid for AT' }; // check if BLZ is valid
+
+    bankInformation = asArray.filter(([key, value]) => {
+      if (value.Bankleitzahl && value.Bankleitzahl + '' === blz) {
+        return value;
+      }
+    })[0][1];
   }
 
   if (locale === 'ch') {
