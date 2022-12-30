@@ -1,13 +1,13 @@
 {
   "name": "js-validator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "npm run index"
   },
   "author": "Kevin Poppe",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "big.js": "^6.2.1"
   },
