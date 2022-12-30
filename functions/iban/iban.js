@@ -18,6 +18,7 @@ function iban(val) {
     return { isValid: false, message: 'Iban locale not supported' }; // check if locale is valid
 
   let blz;
+  let bankInformation;
 
   switch (locale) {
     case 'nl':
@@ -44,8 +45,6 @@ function iban(val) {
       return { isValid: false, message: 'Iban locale not supported' };
   }
 
-  console.log(locale, blz);
-
   if (locale === 'de') {
     if (val.length !== 22)
       return { isValid: false, message: 'Iban length invalid for DE' }; // check if IBAN length is valid (DE)
@@ -53,10 +52,23 @@ function iban(val) {
     const asArray = Object.entries(blzList.de); // convert object to array
     if (
       !asArray.filter(
-        ([key, value]) => value.Bankleitzahl && value.Bankleitzahl === blz
+        ([key, value]) =>
+          (value.Bankleitzahl && value.Bankleitzahl === blz) ||
+          (value['Nachfolge-Bankleitzahl'] &&
+            value['Nachfolge-Bankleitzahl'] === blz)
       ).length > 0
     )
       return { isValid: false, message: 'BLZ invalid for DE' }; // check if BLZ is valid
+
+    bankInformation = asArray.filter(([key, value]) => {
+      if (
+        (value.Bankleitzahl && value.Bankleitzahl === blz) ||
+        (value['Nachfolge-Bankleitzahl'] &&
+          value['Nachfolge-Bankleitzahl'] === blz)
+      ) {
+        return value;
+      }
+    })[0][1];
   }
 
   if (locale === 'nl') {
@@ -98,15 +110,7 @@ function iban(val) {
   if (!check == checkValue)
     return { isValid: false, message: 'Iban CheckValue invalid' }; // check if check value is valid
 
-  return { isValid: true, message: 'Iban validated' };
+  return { isValid: true, message: 'Iban validated', bankInformation };
 }
 
 module.exports = iban;
-
-/*
-nl 18
-at 20
-ch 21
-de 22
-es 24
-*/
