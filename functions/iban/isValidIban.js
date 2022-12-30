@@ -2,7 +2,7 @@ const blzList = require('./blz');
 const alphaToNum = require('./alphaToNum');
 const Big = require('big.js');
 
-function iban(val) {
+function isValidIban(val) {
   const regex = /^[a-z]+[a-z]+[\d]+/gm;
 
   val = val.toLowerCase().replace(/\s/g, ''); // remove spaces
@@ -119,4 +119,4 @@ function iban(val) {
   return { isValid: true, message: 'Iban validated', bankInformation };
 }
 
-module.exports = iban;
+module.exports = isValidIban;

@@ -1,5 +1,5 @@
 {
-  "name": "js-validator",
+  "name": "@teleturbis/js-validator",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -10,5 +10,17 @@
   "license": "MIT",
   "peerDependencies": {
     "big.js": "^6.2.1"
-  }
+  },
+  "dependencies": {
+    "big.js": "^6.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teleturbis/js-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Teleturbis/js-validator/issues"
+  },
+  "homepage": "https://github.com/Teleturbis/js-validator#readme"
 }

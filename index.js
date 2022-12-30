@@ -1,4 +1,4 @@
-const iban = require('./functions/iban/iban.js');
+const isValidIban = require('./functions/iban/isValidIban.js');
 
 const isValidMail = require('./functions/mail/mail.js');
 
@@ -9,7 +9,7 @@ const isAlphaPunctuation = require('./functions/characters/alphaPunctuation/alph
 const isAlphaNumericPunctuation = require('./functions/characters/alphaNumericPunctuation/alphaNumericPunctuation.js');
 
 module.exports = {
-  iban,
+  isValidIban,
   isNumeric,
   isAlphabet,
   isAlphaNumeric,
