@@ -1,6 +1,6 @@
-var isValidIban = require('./functions/iban/isValidIban.js');
+var isValidIban = require('./functions/iban/isValidIban');
 
-var isValidMail = require('./functions/mail/mail.js');
+var isValidMail = require('./functions/mail/mail');
 
 var isNumeric = require('./functions/characters/numeric/numeric');
 var isAlphabet = require('./functions/characters/alphabet/alphabet');

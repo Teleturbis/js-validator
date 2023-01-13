@@ -1,0 +1,4 @@
+tests
+jest.config.js
+nodemon.json
+*.tgz
