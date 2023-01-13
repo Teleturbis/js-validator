@@ -31,7 +31,7 @@ function alphaToNum(val) {
   if (typeof val === 'string' && val.length === 2) {
     return parseInt(`${values[val[0]]}${values[val[1]]}`);
   } else {
-    return 0000;
+    return '0000';
   }
 }
 

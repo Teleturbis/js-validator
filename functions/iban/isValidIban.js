@@ -14,8 +14,8 @@ function isValidIban(val) {
     return { isValid: false, message: 'Iban format invalid' }; // IBAN format
 
   const locale = val.substring(0, 2); // get locale
-  if (!['nl', 'at', 'ch', 'de', 'es'].includes(locale))
-    return { isValid: false, message: 'Iban locale not supported' }; // check if locale is valid
+  /* if (!['nl', 'at', 'ch', 'de', 'es'].includes(locale))
+    return { isValid: false, message: 'Iban locale not supported' }; // check if locale is valid */
 
   let blz;
   let bankInformation;
@@ -111,10 +111,11 @@ function isValidIban(val) {
 
   let big = new Big(98 - bankNum.times(100).mod(97)).c; // calculate check value
 
-  const check = `${big[0]}${big[1]}`; // convert check value to string
+  const check = `${big[0] ? big[0] : 0}${big[1] ? big[1] : 0}`; // convert check value to string
 
-  if (!check == checkValue)
+  if (!(parseFloat(check) == checkValue)) {
     return { isValid: false, message: 'Iban CheckValue invalid' }; // check if check value is valid
+  }
 
   return { isValid: true, message: 'Iban validated', bankInformation };
 }
