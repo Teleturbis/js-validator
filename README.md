@@ -12,6 +12,8 @@ Then import the needed Functions into your File, for example:
 
 #### IBAN
 
+**Currently we support IBAN-Validation only for DE, CH, ES, NL and AT.**
+
 To check an IBAN you have to import the iban-function like that:
 `import { isValidIban } from '@teleturbis/js-validator'`
 
