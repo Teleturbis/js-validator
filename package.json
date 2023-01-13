@@ -9,7 +9,9 @@
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/index.js",
     "prepublish": "jest && npm pack && tsc",
-    "dev": "npx nodemon"
+    "dev": "npx nodemon",
+    "push": "jest && npm pack && tsc && npm version patch && git push",
+    "deploy": "jest && npm pack && tsc && git push && npm publish"
   },
   "author": "Kevin Poppe",
   "license": "MIT",
