@@ -1,4 +1,6 @@
-function isAlphaNumeric(str, options) {
+import { Options } from '../../../types/interfaces';
+
+function isAlphaNumeric(str: string, options: Options) {
   if (options?.space) {
     return /^[a-zA-Z0-9.\s]+$/.test(str);
   }

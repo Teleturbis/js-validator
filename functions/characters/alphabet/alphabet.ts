@@ -1,4 +1,6 @@
-function isAlphabet(value, options) {
+import { Options } from '../../../types/interfaces';
+
+function isAlphabet(value: string, options: Options) {
   if (options?.space) {
     return /^[a-zA-Z\s]+$/.test(value);
   }
