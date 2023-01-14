@@ -22,7 +22,7 @@
     "prepublish": "jest && tsc && npm pack",
     "dev": "npx nodemon",
     "push": "jest && npm version patch && npm pack && tsc && git push",
-    "deploy": "jest && npm pack && tsc && git push && npm publish"
+    "deploy": "jest && npm publish"
   },
   "author": "Kevin Poppe",
   "license": "MIT",
