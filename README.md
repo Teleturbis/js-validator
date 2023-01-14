@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/License-MIT-international/?style=for-the-badge&logo=appveyor)]() [![npm-Version](https://img.shields.io/badge/npm-8.3.1-brightgreen/?style=for-the-badge&logo=appveyor)]() [![TypeScript](https://img.shields.io/badge/TS-4.9.4-brightgreen/?style=for-the-badge&logo=appveyor)]() [![Buildversion](https://img.shields.io/badge/Buildversion-1.0.0-brightgreen/?style=for-the-badge&logo=appveyor)]() [![Test](https://img.shields.io/badge/Test-Jest-brightgreen/?style=for-the-badge&logo=appveyor)]()
+[![License](https://img.shields.io/badge/License-MIT-international/?style=for-the-badge&logo=appveyor)]() [![npm-Version](https://img.shields.io/badge/npm-8.3.1-brightgreen/?style=for-the-badge&logo=appveyor)]() [![TypeScript](https://img.shields.io/badge/TS-4.9.4-brightgreen/?style=for-the-badge&logo=appveyor)]() [![Buildversion](https://img.shields.io/badge/Buildversion-1.0.1-brightgreen/?style=for-the-badge&logo=appveyor)]() [![Test](https://img.shields.io/badge/Test-Jest-brightgreen/?style=for-the-badge&logo=appveyor)]()
 
 # js-validator
 
