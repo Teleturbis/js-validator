@@ -44,44 +44,52 @@ export interface EmailObject {
 }
 
 export interface BlzDe {
+  // Bankleitzahl: string;
+  // Merkmal: string | number;
+  // Bezeichnung: string;
+  // PLZ: string;
+  // Ort: string;
+  // Kurzbezeichnung: string;
+  // PAN?: string;
+  // BIC?: string;
+  // 'Prüfziffer-berechnungs-methode': string;
+  // 'Datensatz-nummer': string;
+  // 'Änderungs-kennzeichen': string;
+  // 'Bankleitzahl-löschung': string | number;
+  // 'Nachfolge-Bankleitzahl': string;
   Bankleitzahl: string;
-  Merkmal: string | number;
   Bezeichnung: string;
   PLZ: string;
   Ort: string;
-  Kurzbezeichnung: string;
-  PAN?: string;
   BIC?: string;
-  'Prüfziffer-berechnungs-methode': string;
-  'Datensatz-nummer': string;
-  'Änderungs-kennzeichen': string;
-  'Bankleitzahl-löschung': string | number;
   'Nachfolge-Bankleitzahl': string;
 }
 
 export interface BlzAt {
-  Kennzeichen?: string;
-  Identnummer: number;
+  // Kennzeichen?: string;
+  // Identnummer: number;
+  // Bankleitzahl: number;
+  // Sektor?: string;
+  // Firmenbuchnummer: string;
+  // Bankenname: string;
+  // Straße: string;
+  // PLZ: number;
+  // Ort: string;
+  // 'Postadresse / PLZ'?: string | number;
+  // 'Postadresse / Ort'?: string;
+  // 'Postadresse / Straße'?: string;
+  // Institutsart?: string;
+  // Postfach?: number;
+  // Bundesland: string;
+  // Telefon?: string | number;
+  // Fax?: string | number;
+  // 'E-Mail'?: string;
+  // 'SWIFT-Code'?: string;
+  // Homepage?: string;
+  // Gründungsdatum?: string;
+  // LEI?: string;
   Bankleitzahl: number;
-  Sektor?: string;
-  Firmenbuchnummer: string;
   Bankenname: string;
-  Straße: string;
-  PLZ: number;
-  Ort: string;
-  'Postadresse / PLZ'?: string | number;
-  'Postadresse / Ort'?: string;
-  'Postadresse / Straße'?: string;
-  Institutsart?: string;
-  Postfach?: number;
-  Bundesland: string;
-  Telefon?: string | number;
-  Fax?: string | number;
-  'E-Mail'?: string;
-  'SWIFT-Code'?: string;
-  Homepage?: string;
-  Gründungsdatum?: string;
-  LEI?: string;
 }
 
 export interface Blz {

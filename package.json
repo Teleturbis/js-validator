@@ -19,9 +19,9 @@
     "test": "jest",
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/index.js",
-    "prepublish": "jest && npm pack && tsc",
+    "prepublish": "jest && tsc && npm pack",
     "dev": "npx nodemon",
-    "push": "jest && npm pack && tsc && npm version patch && git push",
+    "push": "jest && npm version patch && npm pack && tsc && git push",
     "deploy": "jest && npm pack && tsc && git push && npm publish"
   },
   "author": "Kevin Poppe",
