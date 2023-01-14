@@ -1,6 +1,6 @@
 {
   "name": "@teleturbis/js-validator",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "This is a simple Validator, to check Strings for valid Characters. Also you can check an Email and an IBAN. Read more: https://www.npmjs.com/package/@teleturbis/js-validator",
   "keywords": [
     "Validator",
