@@ -1,19 +1,9 @@
-var isValidIban = require('./functions/iban/isValidIban');
+export var isValidIban = require('./functions/iban/isValidIban');
 
-var isValidMail = require('./functions/mail/mail');
+export var isValidMail = require('./functions/mail/mail');
 
-var isNumeric = require('./functions/characters/numeric/numeric');
-var isAlphabet = require('./functions/characters/alphabet/alphabet');
-var isAlphaNumeric = require('./functions/characters/alphanumeric/alphanumeric');
-var isAlphaPunctuation = require('./functions/characters/alphaPunctuation/alphaPunctuation');
-var isAlphaNumericPunctuation = require('./functions/characters/alphaNumericPunctuation/alphaNumericPunctuation');
-
-module.exports = {
-  isValidIban,
-  isNumeric,
-  isAlphabet,
-  isAlphaNumeric,
-  isAlphaPunctuation,
-  isAlphaNumericPunctuation,
-  isValidMail,
-};
+export var isNumeric = require('./functions/characters/numeric/numeric');
+export var isAlphabet = require('./functions/characters/alphabet/alphabet');
+export var isAlphaNumeric = require('./functions/characters/alphanumeric/alphanumeric');
+export var isAlphaPunctuation = require('./functions/characters/alphaPunctuation/alphaPunctuation');
+export var isAlphaNumericPunctuation = require('./functions/characters/alphaNumericPunctuation/alphaNumericPunctuation');
